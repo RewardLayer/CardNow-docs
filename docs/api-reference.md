@@ -6,7 +6,7 @@
 
 ## Monitoring
 ### <span style="color: green;">GET</span> /heartbeat
-####Heartbeat Message
+#### Heartbeat Message
 
 A heart resource that allows for the monitoring and testing of the API
 
@@ -40,6 +40,12 @@ Response - 503
 ```json
 
 ```
+##### Headers
+
+|Name|Type|Description|
+|---|---|---|
+|correlationid|`guid`|The correlation Id is used to track the API request|
+|x-api-key|`guid`|The API key from your developer account used to identify the limits on your account|
 
 
 ## Catalog

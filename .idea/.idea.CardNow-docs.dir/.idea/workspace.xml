@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9af177a3-0d26-4a78-9d22-ba77ee09ccd9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api-reference.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +15,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/docs/index.md" />
-      <option value="$PROJECT_DIR$/mkdocs.yml" />
       <option value="$PROJECT_DIR$/,gitignore" />
+      <option value="$PROJECT_DIR$/mkdocs.yml" />
       <option value="$PROJECT_DIR$/docs/api-reference.md" />
     </changedPaths>
   </component>
