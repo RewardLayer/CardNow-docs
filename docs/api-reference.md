@@ -6,7 +6,7 @@
 
 ## Monitoring
 ***
-### <span style="color: green;">GET</span> v1/heartbeat
+### GET v1/heartbeat
 #### Heartbeat Message
 
 A heart resource that allows for the monitoring and testing of the API
