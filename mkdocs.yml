@@ -8,4 +8,5 @@ nav:
         - 'How to Test': 'index.md'
     - 'API Reference': 'api-reference.md'
 repo_url: https://github.com/RewardLayer/docs/
-theme: material
+theme:
+    name: material
