@@ -5,11 +5,9 @@ nav:
         - 'How it works': 'index.md'
         - 'Accessing the API': 'index.md'
         - 'Authentication': 'index.md'
-    - 'Testing':
-          - 'How to Test': 'index.md'
+        - 'How to Test': 'index.md'
     - 'API Reference':
         - 'Overview' : 'index.md'
         - 'Catalog' : 'index.md'
         - 'Ordering' : 'index.md'
-    - About: about.md
 repo_url: https://github.com/RewardLayer/docs/
