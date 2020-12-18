@@ -55,7 +55,10 @@ Response - 503
 |Http Status|Response Model|Notes|
 |---|---|---|
 |200|None||
-|400|`guid`|The API key from your developer account used to identify the limits on your account|
+|400|`Error`||
+|400| |Rate Limited|
+|500| ||
+|503| ||
 
 ***
 ##### Status Returns
