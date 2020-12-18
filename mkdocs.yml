@@ -1,4 +1,6 @@
 site_name: CardNow API
+theme:
+    name: material
 nav:
     - Overview: index.md
     - 'Getting Started':
@@ -8,5 +10,3 @@ nav:
         - 'How to Test': 'index.md'
     - 'API Reference': 'api-reference.md'
 repo_url: https://github.com/RewardLayer/docs/
-theme:
-    name: material
