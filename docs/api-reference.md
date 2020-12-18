@@ -12,7 +12,7 @@
 A heart resource that allows for the monitoring and testing of the API
 ***
 Request 
-```
+```sh
 GET https://api-cardnow.com/v1/heartbeat
 Accept-Encoding: gzip,deflate
 correlationid: 7e79f263-57a7-4d59-bd0a-69e03806488f
