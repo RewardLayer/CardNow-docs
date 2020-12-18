@@ -6,8 +6,5 @@ nav:
         - 'Accessing the API': 'index.md'
         - 'Authentication': 'index.md'
         - 'How to Test': 'index.md'
-    - 'API Reference':
-        - 'Overview' : 'index.md'
-        - 'Catalog' : 'index.md'
-        - 'Ordering' : 'index.md'
+    - 'API Reference': 'api-reference.md'
 repo_url: https://github.com/RewardLayer/docs/
