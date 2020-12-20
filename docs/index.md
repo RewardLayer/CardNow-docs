@@ -1,4 +1,4 @@
 ---
-template: src/overrides/home.html
+template: overrides/home.html
 title: CardNow API Documentation
 ---
