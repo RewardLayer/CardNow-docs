@@ -64,3 +64,7 @@ Responses
 ***
 ##### Status Returns
 
+|Https Status|	Error|	Message|
+|---|---|---|
+|400|	`exchange.invalid.x-api-key`|	The x-api-key HTTP header value is invalid.|
+|500|	`cardnow.error.heartbeat`|	There was a problem with the heartbeat|
