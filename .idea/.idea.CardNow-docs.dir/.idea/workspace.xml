@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/api-reference/catalog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api-reference.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/api-overview.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/models.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/models.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/monitoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api-reference/catalog.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/catalog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api-reference/models.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/models.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api-reference/monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/monitoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,14 +20,16 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/docs/overview.md" />
       <option value="$PROJECT_DIR$/docs/overrides/main.html" />
-      <option value="$PROJECT_DIR$/docs/index.md" />
       <option value="$PROJECT_DIR$/docs/CNAME" />
       <option value="$PROJECT_DIR$/.github/workflows/Production.yml" />
       <option value="$PROJECT_DIR$/docs/models.md" />
       <option value="$PROJECT_DIR$/docs/api-reference.md" />
       <option value="$PROJECT_DIR$/docs/monitoring.md" />
-      <option value="$PROJECT_DIR$/mkdocs.yml" />
+      <option value="$PROJECT_DIR$/docs/api-reference/catalog.md" />
       <option value="$PROJECT_DIR$/docs/api-reference/monitoring.md" />
+      <option value="$PROJECT_DIR$/docs/api-reference/models.md" />
+      <option value="$PROJECT_DIR$/docs/index.md" />
+      <option value="$PROJECT_DIR$/mkdocs.yml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lvrFT6GEv3slCLPgVqs2nV6Bip" />

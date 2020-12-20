@@ -1,8 +1,17 @@
-## Models
 ***
-### Error Models
 
-####Error
+## Catalog Models
+***
+
+## Ordering Models
+***
+
+## Activating Models
+
+***
+## Error Models
+***
+###Error
 Describes the Error return for a set of 400 or 500 error returns
 
 

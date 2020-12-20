@@ -1,4 +1,4 @@
-
+***
 Allows for monitoring the API for availability
 ***
 ### ```GET``` v1/heartbeat
