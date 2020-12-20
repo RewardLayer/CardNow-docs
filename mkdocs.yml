@@ -3,12 +3,13 @@ site_name: CardNow API
 # Navigation
 nav:
     - Home: 'index.md'
-    - 'API Reference': 'api-reference.md'
-        - Monitoring: 'monitoring.md'
-        - Catalog: 'catalog.md'
-        - Ordering: 'ordering.md'
-        - Models: 'models.md'
-
+    - 'API Reference':
+          - 'Overview': 'api-reference.md'
+          - 'Monotiring': 'monitoring.md'
+          - 'Catalog': 'catalog.md'
+          - 'Ordering': 'ordering.md'
+          - 'Models': 'models.md'
+            
 repo_url: https://github.com/RewardLayer/docs/
 edit_uri: ""
 # Copyright
