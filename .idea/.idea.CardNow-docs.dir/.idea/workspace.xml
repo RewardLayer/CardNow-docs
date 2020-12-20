@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9af177a3-0d26-4a78-9d22-ba77ee09ccd9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Production.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +18,8 @@
       <option value="$PROJECT_DIR$/docs/index.md" />
       <option value="$PROJECT_DIR$/,gitignore" />
       <option value="$PROJECT_DIR$/docs/api-reference.md" />
-      <option value="$PROJECT_DIR$/.github/workflows/Production.yml" />
       <option value="$PROJECT_DIR$/mkdocs.yml" />
+      <option value="$PROJECT_DIR$/.github/workflows/Production.yml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lpzk9yBg7XCyMWDqbmi3PEieag" />
