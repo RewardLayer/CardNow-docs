@@ -9,7 +9,7 @@ nav:
         - 'Accessing the API': 'index.md'
         - 'Authentication': 'index.md'
         - 'How to Test': 'index.md'
-    - 'API Reference': 'api-reference.md'
+    - API Reference: 'api-reference.md'
 repo_url: https://github.com/RewardLayer/docs/
 edit_uri: ""
 # Copyright
