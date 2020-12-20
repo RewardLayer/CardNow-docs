@@ -10,7 +10,6 @@ nav:
     - 'API Reference': 'api-reference.md'
 repo_url: https://github.com/RewardLayer/docs/
 
-
 # Configuration
 theme:
     name: null
