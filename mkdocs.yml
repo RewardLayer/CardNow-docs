@@ -1,6 +1,8 @@
 site_name: CardNow API
 theme:
     name: material
+    features:
+        - navigation.tabs 
 nav:
     - Overview: index.md
     - 'Getting Started':
