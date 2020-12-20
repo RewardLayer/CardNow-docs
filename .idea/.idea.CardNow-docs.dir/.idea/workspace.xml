@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/models.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/monitoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api-reference.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,9 @@
       <option value="$PROJECT_DIR$/docs/CNAME" />
       <option value="$PROJECT_DIR$/.github/workflows/Production.yml" />
       <option value="$PROJECT_DIR$/mkdocs.yml" />
+      <option value="$PROJECT_DIR$/docs/monitoring.md" />
+      <option value="$PROJECT_DIR$/docs/api-reference.md" />
+      <option value="$PROJECT_DIR$/docs/models.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lvrFT6GEv3slCLPgVqs2nV6Bip" />

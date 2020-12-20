@@ -17,12 +17,12 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
 ***
 === "Response - 200 OK"
 
-
 ```json
 {
   "heartbeat": "ok"
 }
 ```
+
 === "Response - 500 "
 
 ```json
@@ -33,10 +33,13 @@ User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
   "UserMessage": "There was an error when calling the heartbeat message. Please contact support@cardnow.com to address the issue. "
 }
 ```
+
 === "Response - 503"
+
 ```json
 
 ```
+
 ***
 ##### Headers
 
