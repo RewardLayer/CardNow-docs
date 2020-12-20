@@ -15,6 +15,7 @@
       <option value="$PROJECT_DIR$/docs/overview.md" />
       <option value="$PROJECT_DIR$/mkdocs.yml" />
       <option value="$PROJECT_DIR$/docs/index.md" />
+      <option value="$PROJECT_DIR$/docs/overrides/main.html" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lvrFT6GEv3slCLPgVqs2nV6Bip" />
@@ -45,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608488304442</updated>
-      <workItem from="1608488307176" duration="3428000" />
+      <workItem from="1608488307176" duration="3802000" />
     </task>
     <servers />
   </component>
