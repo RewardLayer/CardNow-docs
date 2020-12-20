@@ -2,6 +2,26 @@
 
 ## Catalog Models
 ***
+###Product
+Describes a Product that can be ordered 
+
+The Product is an individual product that can be ordered as a part of a order. The product is configured for each partner and determines the type of packaging type included as part of the order
+
+|Name|	Type|	Notes|
+|---|---|---|
+|Packaging Type|`enum`|	A specific type of package that the card will be packaged in The values are ```Box```, ```Starter``` or ```Refill```|
+|Brand|	`string`|	The name of the Brand for the card that can be ordered|
+|SKU|	`string`|	The SKU that is used to order the product. Based on the Packaging type and brand this will be unique and will determine both the brand and the packaging type|
+***
+
+**Sample**
+```json
+{
+"PackagingType": "Box",
+"Brand": "Amazon",
+"SKU": "AmazonKIT"
+}
+```
 
 ## Ordering Models
 ***
@@ -25,7 +45,7 @@ The error​ model is a set of error code and messages that describe the error t
 |UserMessage|	`string`|	A longer form human readable message on how to solve the problem or give details about the nature of the error|
 ***
 
-sample
+**Sample**
 ```json
 {
 "ErrorCode": "exchange.invalid.productLine",

@@ -1,6 +1,6 @@
 ***
 Allows for monitoring the API for availability
-***
+
 ### ```GET``` v1/heartbeat
 
 A heart resource that allows for the monitoring and testing of the API
