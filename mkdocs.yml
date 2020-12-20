@@ -13,7 +13,6 @@ copyright: Copyright &copy; 2020 - 2021 CardNow
 theme:
     name: material
     features:
-        - navigation.tabs
         - navigation.tabs.sticky
         - toc.integrate
 
