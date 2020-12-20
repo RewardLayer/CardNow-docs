@@ -18,7 +18,6 @@ copyright: Copyright &copy; 2020 - 2021 CardNow
 # Configuration
 theme:
     name: material
-    custom_dir: docs/overrides
     features:
         - navigation.tabs
         - navigation.tabs.sticky
