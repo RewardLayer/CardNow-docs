@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9af177a3-0d26-4a78-9d22-ba77ee09ccd9" name="Default Changelist" comment="" />
+    <list default="true" id="9af177a3-0d26-4a78-9d22-ba77ee09ccd9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Production.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +18,7 @@
       <option value="$PROJECT_DIR$/,gitignore" />
       <option value="$PROJECT_DIR$/docs/api-reference.md" />
       <option value="$PROJECT_DIR$/mkdocs.yml" />
+      <option value="$PROJECT_DIR$/.github/workflows/Production.yml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lpzk9yBg7XCyMWDqbmi3PEieag" />
@@ -47,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608441496583</updated>
-      <workItem from="1608441500300" duration="118000" />
+      <workItem from="1608441500300" duration="325000" />
     </task>
     <servers />
   </component>
