@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/overview.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +14,7 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/docs/index.md" />
       <option value="$PROJECT_DIR$/mkdocs.yml" />
     </changedPaths>
   </component>
@@ -47,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608488304442</updated>
-      <workItem from="1608488307176" duration="719000" />
+      <workItem from="1608488307176" duration="1077000" />
     </task>
     <servers />
   </component>
