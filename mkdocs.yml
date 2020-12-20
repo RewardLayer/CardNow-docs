@@ -2,13 +2,7 @@ site_name: CardNow API
 
 # Navigation
 nav:
-    - Home: index.md
-    - Overview: 'overview.md'
-    - 'Getting Started':
-        - 'How it works': 'index.md'
-        - 'Accessing the API': 'index.md'
-        - 'Authentication': 'index.md'
-        - 'How to Test': 'index.md'
+    - Home: 'index.md'
     - API Reference: 'api-reference.md'
 repo_url: https://github.com/RewardLayer/docs/
 edit_uri: ""
