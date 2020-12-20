@@ -1,7 +1,7 @@
-## Monitoring
+
+Allows for monitoring the API for availability
 ***
 ### ```GET``` v1/heartbeat
-#### Heartbeat Message
 
 A heart resource that allows for the monitoring and testing of the API
 ***
@@ -26,7 +26,7 @@ Responses
     }
     ```
 
-=== "Response - 500 "
+=== "500 "
 
     ```json
     {
@@ -37,7 +37,7 @@ Responses
     }
     ```
 
-=== "Response - 503"
+=== "503"
     
     ```json
     
