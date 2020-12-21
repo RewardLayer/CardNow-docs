@@ -33,25 +33,25 @@ The order are the details of what will or what was sent to an individual custome
 
 
 
-| Name              | Type                                                         | Notes                                                        |
-| ----------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
-| OrderId           | Int                                                          | A unique identifier use by the API to track the order        |
-| InvoiceNumber     | `string`                                                     | A invoice number that is used by the customer to track the order. |
-| PartnerOrderId    | string                                                       | An identifer sent by the partner when creating an order      |
-| CreatedUTC        | DateTime                                                     | Date/Time that the order is created                          |
-| UpdatedUTC        | DateTime                                                     | Date/Time the order was last updated                         |
-| Status            | String                                                       | The status of the order                                      |
-| FulfillmentStatus | String                                                       | The status of fulfillment                                    |
-| OrderTotal        | decimal                                                      | Total cost of the order                                      |
-| Discounts         | decimal                                                      | Discounts on the order                                       |
-| SubTotal          | decimal                                                      | Sub-total before discounts are applied to the order          |
-| Customer          | [Customer](https://docs.cardnow.com/api-reference/models/#customer) | Customer Information for the order                           |
-| Payment           | [Payment[]](https://docs.cardnow.com/api-reference/models/#payment) | Payment for the Order                                        |
-| ShippingAddress   | [Address](https://docs.cardnow.com/api-reference/models/#address) | Address the Order is shipped                                 |
-| BillingAddress    | [Address](https://docs.cardnow.com/api-reference/models/#address) | Billing Address for the Order                                |
-| LineItems         | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items for the Order                             |
-| Fulfillments      | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
-| Refunds           | Refund[]                                                     | Refunds performed on the order                               |
+| Name               | Type                                                         | Notes                                                        |
+| ------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- |
+| OrderId            | Int                                                          | A unique identifier use by the API to track the order        |
+| InvoiceNumber      | `string`                                                     | A invoice number that is used by the customer to track the order. |
+| PartnerOrderId     | string                                                       | An identifer sent by the partner when creating an order      |
+| CreatedUTC         | DateTime                                                     | Date/Time that the order is created                          |
+| UpdatedUTC         | DateTime                                                     | Date/Time the order was last updated                         |
+| Status             | String                                                       | The status of the order                                      |
+| FulfillmentStatus  | String                                                       | The status of fulfillment                                    |
+| OrderTotal         | decimal                                                      | Total cost of the order                                      |
+| Discounts          | decimal                                                      | Discounts on the order                                       |
+| SubTotal           | decimal                                                      | Sub-total before discounts are applied to the order          |
+| Customer           | [Customer](https://docs.cardnow.com/api-reference/models/#customer) | Customer Information for the order                           |
+| PaymentTransaction | [PaymentTransaction[]](https://docs.cardnow.com/api-reference/models/#payment) | Payment for the Order                                        |
+| ShippingAddress    | [Address](https://docs.cardnow.com/api-reference/models/#address) | Address the Order is shipped                                 |
+| BillingAddress     | [Address](https://docs.cardnow.com/api-reference/models/#address) | Billing Address for the Order                                |
+| LineItems          | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items for the Order                             |
+| Fulfillments       | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
+| Refunds            | Refund[]                                                     | Refunds performed on the order                               |
 
 **Sample**
 
@@ -108,15 +108,59 @@ Details of line items that have been fulfilled
 
 Information on the customer that the order was placed on behalf
 
+| Name         | Type     | Notes                                   |
+| ------------ | -------- | :-------------------------------------- |
+| CustomerId   | int      | The identifier for the Customer         |
+| CreatedUTC   | DateTime | Date/Time that the customer is created  |
+| UpdatedUTC   | DateTime | Date/Time the customer was last updated |
+| EmailAddress | string   | Email Address of the customer           |
+| PhoneNumber  | string   | Phone number of the customer            |
+
 ###Address
 
+Describes an Address
+
+| Name         | Type     | Notes                                  |
+| ------------ | -------- | :------------------------------------- |
+| AddressId    | int      | The identifier for the Address         |
+| CreatedUTC   | DateTime | Date/Time that the address is created  |
+| UpdatedUTC   | DateTime | Date/Time the address was last updated |
+| FirstName    | String   | First name of the recipient            |
+| LastName     | String   | Last name of the recipient             |
+| Company Name | string   | Name of the company (Optional)         |
+| AddressLine1 | String   | Address line 1                         |
+| AddressLin2  | String   | Address line 2(Optional)               |
+| City         | String   | City                                   |
+| Region       | String   | Region/State                           |
+| PostalCode   | String   | Postal Code/Zip Code (Zip plus 4)      |
 
 
-###Payment
 
+###PaymentTransaction
 
+Payment for the Order
 
-## Activating Models
+| Name              | Type   | Notes                                                        |
+| ----------------- | ------ | :----------------------------------------------------------- |
+| PaymentId         | int    | The identifier for the Payment                               |
+| TransactionStatus | string | Status of the Transaction                                    |
+| OrderId           | int    | OrderId associared with the Transaction                      |
+| Type              | string | Type of transaction: authorization: Money that the customer has agreed to pay. The authorization period can be between 7 and 30 days (depending on your payment service) while a store waits for a payment to be captured.<br/>capture: A transfer of money that was reserved during the authorization<br/>sale: The authorization and capture of a payment performed in one single step.<br/>void: The cancellation of a pending authorization or capture.<br/>refund: The partial or full return of captured money to the customer. |
+| Source            | String | Credit Card, Credit, Invoice                                 |
+| Status            | string | Status of the payment                                        |
+
+###Refund
+
+Refund on the Order
+
+| Name     | Type       | Notes                         |
+| -------- | ---------- | :---------------------------- |
+| RefundId | int        | The identifier for the Refund |
+| Amount   | decimal    | Refund Amount                 |
+| LineItem | LineItem[] | Line Items Affected           |
+| Status   | string     | Status of the refund          |
+
+## 
 
 ***
 ## Error Models
