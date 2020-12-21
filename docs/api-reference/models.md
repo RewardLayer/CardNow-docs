@@ -33,23 +33,24 @@ The order are the details of what will or what was sent to an individual custome
 
 
 
-| Name              | Type          | Notes                                                        |
-| ----------------- | ------------- | :----------------------------------------------------------- |
-| InvoiceNumber     | `string`      | A invoice number that is used by the customer to track the order. |
-| OrderId           | Int           | A unique identifier use by the API to track the order        |
-| PartnerOrderId    | string        | An identifer sent by the partner when creating an order      |
-| CreatedUTC        | DateTime      | Date/Time that the order is created                          |
-| UpdatedUTC        | DateTime      | Date/Time the order was last updated                         |
-| Status            | String        | The status of the order                                      |
-| FulfillmentStatus | String        | The status of fulfillment                                    |
-| OrderTotal        | decimal       | Total cost of the order                                      |
-| Discounts         | decimal       | Discounts on the order                                       |
-| Customer          | Customer      | Customer Information for the order                           |
-| Payment           | Payment       | Payment for the address                                      |
-| ShippingAddress   | Address       | Address the Order is shipped                                 |
-| BillingAddress    | Address       | Billing Address for the Order                                |
-| LineItems         | LineItem[]    | List of line items for the Order                             |
-| Fulfillments      | Fulfillment[] | Fulfillment details for the order                            |
+| Name              | Type                                                         | Notes                                                        |
+| ----------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
+| InvoiceNumber     | `string`                                                     | A invoice number that is used by the customer to track the order. |
+| OrderId           | Int                                                          | A unique identifier use by the API to track the order        |
+| PartnerOrderId    | string                                                       | An identifer sent by the partner when creating an order      |
+| CreatedUTC        | DateTime                                                     | Date/Time that the order is created                          |
+| UpdatedUTC        | DateTime                                                     | Date/Time the order was last updated                         |
+| Status            | String                                                       | The status of the order                                      |
+| FulfillmentStatus | String                                                       | The status of fulfillment                                    |
+| OrderTotal        | decimal                                                      | Total cost of the order                                      |
+| Discounts         | decimal                                                      | Discounts on the order                                       |
+| SubTotal          | decimal                                                      | Sub-total before discounts are applied to the order          |
+| Customer          | [Customer](https://docs.cardnow.com/api-reference/models/#customer) | Customer Information for the order                           |
+| Payment           | [Payment](https://docs.cardnow.com/api-reference/models/#payment) | Payment for the address                                      |
+| ShippingAddress   | [Address](https://docs.cardnow.com/api-reference/models/#address) | Address the Order is shipped                                 |
+| BillingAddress    | [Address](https://docs.cardnow.com/api-reference/models/#address) | Billing Address for the Order                                |
+| LineItems         | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items for the Order                             |
+| Fulfillments      | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
 
 **Sample**
 
