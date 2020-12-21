@@ -35,8 +35,8 @@ The order are the details of what will or what was sent to an individual custome
 
 | Name              | Type                                                         | Notes                                                        |
 | ----------------- | ------------------------------------------------------------ | :----------------------------------------------------------- |
-| InvoiceNumber     | `string`                                                     | A invoice number that is used by the customer to track the order. |
 | OrderId           | Int                                                          | A unique identifier use by the API to track the order        |
+| InvoiceNumber     | `string`                                                     | A invoice number that is used by the customer to track the order. |
 | PartnerOrderId    | string                                                       | An identifer sent by the partner when creating an order      |
 | CreatedUTC        | DateTime                                                     | Date/Time that the order is created                          |
 | UpdatedUTC        | DateTime                                                     | Date/Time the order was last updated                         |
@@ -46,11 +46,12 @@ The order are the details of what will or what was sent to an individual custome
 | Discounts         | decimal                                                      | Discounts on the order                                       |
 | SubTotal          | decimal                                                      | Sub-total before discounts are applied to the order          |
 | Customer          | [Customer](https://docs.cardnow.com/api-reference/models/#customer) | Customer Information for the order                           |
-| Payment           | [Payment](https://docs.cardnow.com/api-reference/models/#payment) | Payment for the address                                      |
+| Payment           | [Payment[]](https://docs.cardnow.com/api-reference/models/#payment) | Payment for the Order                                        |
 | ShippingAddress   | [Address](https://docs.cardnow.com/api-reference/models/#address) | Address the Order is shipped                                 |
 | BillingAddress    | [Address](https://docs.cardnow.com/api-reference/models/#address) | Billing Address for the Order                                |
 | LineItems         | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items for the Order                             |
 | Fulfillments      | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
+| Refunds           | Refund[]                                                     | Refunds performed on the order                               |
 
 **Sample**
 
@@ -67,13 +68,53 @@ The order are the details of what will or what was sent to an individual custome
 
 ###LineItem
 
+The LineItem represents the details of Product that needs to be fulfilled
+
+| Name          | Type     | Notes                                                  |
+| ------------- | -------- | :----------------------------------------------------- |
+| LineItemId    | int      | The identifier for the line item                       |
+| CreatedUTC    | DateTime | Date/Time that the line item is created                |
+| UpdatedUTC    | DateTime | Date/Time the line item was last updated               |
+| Sku           | String   | The identifier of the product that should be fulfilled |
+| Quantity      | int      | Quantity of the product that should be ordered         |
+| Price         | decimal  | Price of the Product                                   |
+| Discount      | decimal  | Discount applied to the line item                      |
+| SubTotal      | decimal  | Sub-total for the line item                            |
+| LineItemTotal | decimal  | Total for the line item                                |
+
+**Sample**
+
+```json
+{
+"lineItemId" : 1233
+}
+```
+
 ###Fulfillment
+
+Details of line items that have been fulfilled
+
+| Name            | Type                                                         | Notes                                       |
+| --------------- | ------------------------------------------------------------ | :------------------------------------------ |
+| FulfillmentId   | int                                                          | The identifier for the fulfillment          |
+| CreatedUTC      | DateTime                                                     | Date/Time that the line item is created     |
+| UpdatedUTC      | DateTime                                                     | Date/Time the line item was last updated    |
+| LineItems       | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items that have been fulfilled |
+| TrackingCompany | string                                                       | Tracking Company used to ship the product   |
+| TrackingNumber  | String[]                                                     | Tracking Numbers                            |
+| ShipDate        | DateTime                                                     | The Datetime the products shipped           |
 
 ###Customer
 
+Information on the customer that the order was placed on behalf
+
 ###Address
 
+
+
 ###Payment
+
+
 
 ## Activating Models
 
