@@ -15,6 +15,7 @@ The Product is an individual product that can be ordered as a part of a order. T
 ***
 
 **Sample**
+
 ```json
 {
 "PackagingType": "Box",
@@ -25,6 +26,53 @@ The Product is an individual product that can be ordered as a part of a order. T
 
 ## Ordering Models
 ***
+###Order
+Describes an Order
+
+The order are the details of what will or what was sent to an individual customer. 
+
+
+
+| Name              | Type          | Notes                                                        |
+| ----------------- | ------------- | :----------------------------------------------------------- |
+| InvoiceNumber     | `string`      | A invoice number that is used by the customer to track the order. |
+| OrderId           | Int           | A unique identifier use by the API to track the order        |
+| PartnerOrderId    | string        | An identifer sent by the partner when creating an order      |
+| CreatedUTC        | DateTime      | Date/Time that the order is created                          |
+| UpdatedUTC        | DateTime      | Date/Time the order was last updated                         |
+| Status            | String        | The status of the order                                      |
+| FulfillmentStatus | String        | The status of fulfillment                                    |
+| OrderTotal        | decimal       | Total cost of the order                                      |
+| Discounts         | decimal       | Discounts on the order                                       |
+| Customer          | Customer      | Customer Information for the order                           |
+| Payment           | Payment       | Payment for the address                                      |
+| ShippingAddress   | Address       | Address the Order is shipped                                 |
+| BillingAddress    | Address       | Billing Address for the Order                                |
+| LineItems         | LineItem[]    | List of line items for the Order                             |
+| Fulfillments      | Fulfillment[] | Fulfillment details for the order                            |
+
+**Sample**
+
+```json
+{
+  "InvoiceNumber" : "ABC123455",
+  "OrderId" : 123,
+  "PartnerOrderId" : "ABCSFFFFGFF",
+  "CreatedUTC" : "2019-07-26T16:59:57-05:00.",
+  "UpdatedUTC" : "2019-07-26T16:59:57-05:00.",
+  
+}
+```
+
+###LineItem
+
+###Fulfillment
+
+###Customer
+
+###Address
+
+###Payment
 
 ## Activating Models
 

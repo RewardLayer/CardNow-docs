@@ -4,8 +4,6 @@
     <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/api-reference/models.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/models.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api-reference/monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/monitoring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
