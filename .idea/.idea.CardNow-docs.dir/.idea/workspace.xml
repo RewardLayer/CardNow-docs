@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/api-reference/Ordering.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api-reference/models.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/models.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/api-reference/catalog.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api-reference/catalog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +23,12 @@
       <option value="$PROJECT_DIR$/docs/models.md" />
       <option value="$PROJECT_DIR$/docs/api-reference.md" />
       <option value="$PROJECT_DIR$/docs/monitoring.md" />
-      <option value="$PROJECT_DIR$/docs/api-reference/catalog.md" />
       <option value="$PROJECT_DIR$/docs/index.md" />
       <option value="$PROJECT_DIR$/mkdocs.yml" />
       <option value="$PROJECT_DIR$/docs/api-reference/monitoring.md" />
       <option value="$PROJECT_DIR$/docs/api-reference/models.md" />
+      <option value="$PROJECT_DIR$/docs/api-reference/catalog.md" />
+      <option value="$PROJECT_DIR$/docs/api-reference/Ordering.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lvrFT6GEv3slCLPgVqs2nV6Bip" />
@@ -58,13 +60,14 @@
       <option name="presentableId" value="Default" />
       <updated>1608488304442</updated>
       <workItem from="1608488307176" duration="3802000" />
+      <workItem from="1608609014404" duration="1632000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
@@ -86,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

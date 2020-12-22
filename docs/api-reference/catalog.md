@@ -2,7 +2,7 @@
 
 Allows for retrieving the list of Products
 
-### ```GET``` v1/catalog
+### ```GET``` v1/products
 
 A heart resource that allows for the monitoring and testing of the API
 
