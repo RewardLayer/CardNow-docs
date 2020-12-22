@@ -76,7 +76,7 @@ Responses
 | ----------- | ------------------------------------------------------------ | ------------ |
 | 200         | Array of [Products](https://docs.cardnow.com/api-reference/models/#product) |              |
 | 400         | `Error`                                                      |              |
-| 400         |                                                              | Rate Limited |
+| 429         |                                                              | Rate Limited |
 | 500         |                                                              |              |
 | 503         |                                                              |              |
 

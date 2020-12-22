@@ -42,7 +42,7 @@ Responses
     ```json
     
     ```
-    
+
 ***
 ##### Headers
 
@@ -57,7 +57,7 @@ Responses
 |---|---|---|
 |200|None||
 |400|`Error`||
-|400| |Rate Limited|
+|429| |Rate Limited|
 |500| ||
 |503| ||
 
@@ -68,3 +68,4 @@ Responses
 |---|---|---|
 |400|	`exchange.invalid.x-api-key`|	The x-api-key HTTP header value is invalid.|
 |500|	`cardnow.error.heartbeat`|	There was a problem with the heartbeat|
+
