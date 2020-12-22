@@ -3,6 +3,12 @@ site_name: CardNow API
 # Navigation
 nav:
     - Home: 'index.md'
+    - 'Getting Started':
+        - 'How it works' : 'getting-started/index.md'
+        - 'Accessing the API' : 'getting-started/index.md'
+        - 'Authentication' : 'getting-started/index.md'
+    - 'Testing' :
+        - 'How to Test' : 'testing/index.md'
     - 'API Reference':
           - 'Overview': 'api-reference/api-overview.md'
           - 'Monitoring': 'api-reference/monitoring.md'

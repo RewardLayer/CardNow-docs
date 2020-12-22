@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardNow-docs.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
-    </list>
+    <list default="true" id="bd9895ee-3db6-4248-a71f-48dba4bbc474" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608488304442</updated>
       <workItem from="1608488307176" duration="3802000" />
-      <workItem from="1608609014404" duration="2219000" />
+      <workItem from="1608609014404" duration="2449000" />
     </task>
     <servers />
   </component>
