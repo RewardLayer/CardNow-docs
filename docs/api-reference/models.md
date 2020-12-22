@@ -37,7 +37,7 @@ The order are the details of what will or what was sent to an individual custome
 | ------------------ | ------------------------------------------------------------ | :----------------------------------------------------------- |
 | OrderId            | Int                                                          | A unique identifier use by the API to track the order        |
 | InvoiceNumber      | `string`                                                     | A invoice number that is used by the customer to track the order. |
-| PartnerOrderId     | string                                                       | An identifer sent by the partner when creating an order      |
+| PartnerOrderId     | string                                                       | An identifier sent by the partner when creating an order      |
 | CreatedUTC         | DateTime                                                     | Date/Time that the order is created                          |
 | UpdatedUTC         | DateTime                                                     | Date/Time the order was last updated                         |
 | Status             | String                                                       | The status of the order                                      |
@@ -50,7 +50,7 @@ The order are the details of what will or what was sent to an individual custome
 | ShippingAddress    | [Address](https://docs.cardnow.com/api-reference/models/#address) | Address the Order is shipped                                 |
 | BillingAddress     | [Address](https://docs.cardnow.com/api-reference/models/#address) | Billing Address for the Order                                |
 | LineItems          | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items for the Order                             |
-| Fulfillments       | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
+| Fulfillment       | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
 | Refunds            | Refund[]                                                     | Refunds performed on the order                               |
 
 **Sample**
@@ -61,7 +61,7 @@ The order are the details of what will or what was sent to an individual custome
   "OrderId" : 123,
   "PartnerOrderId" : "ABCSFFFFGFF",
   "CreatedUTC" : "2019-07-26T16:59:57-05:00.",
-  "UpdatedUTC" : "2019-07-26T16:59:57-05:00.",
+  "UpdatedUTC" : "2019-07-26T16:59:57-05:00."
   
 }
 ```
@@ -144,7 +144,7 @@ Payment for the Order
 | ----------------- | ------ | :----------------------------------------------------------- |
 | PaymentId         | int    | The identifier for the Payment                               |
 | TransactionStatus | string | Status of the Transaction                                    |
-| OrderId           | int    | OrderId associared with the Transaction                      |
+| OrderId           | int    | OrderId associated with the Transaction                      |
 | Type              | string | Type of transaction: authorization: Money that the customer has agreed to pay. The authorization period can be between 7 and 30 days (depending on your payment service) while a store waits for a payment to be captured.<br/>capture: A transfer of money that was reserved during the authorization<br/>sale: The authorization and capture of a payment performed in one single step.<br/>void: The cancellation of a pending authorization or capture.<br/>refund: The partial or full return of captured money to the customer. |
 | Source            | String | Credit Card, Credit, Invoice                                 |
 | Status            | string | Status of the payment                                        |
