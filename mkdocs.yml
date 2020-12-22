@@ -28,6 +28,7 @@ theme:
         - navigation.tabs.sticky
         - toc.integrate
         - navigation.sections
+        - navigation.expand
 
 #Plug-ins
 plugins:
