@@ -21,6 +21,7 @@ theme:
     features:
         - navigation.tabs.sticky
         - toc.integrate
+        - navigation.sections
 
 #Plug-ins
 plugins:
