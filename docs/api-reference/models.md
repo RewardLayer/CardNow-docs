@@ -51,7 +51,7 @@ The order are the details of what will or what was sent to an individual custome
 | BillingAddress     | [Address](https://docs.cardnow.com/api-reference/models/#address) | Billing Address for the Order                                |
 | LineItems          | [LineItem[]](https://docs.cardnow.com/api-reference/models/#lineitem) | List of line items for the Order                             |
 | Fulfillment       | [Fulfillment](https://docs.cardnow.com/api-reference/models/#fulfillment)[] | Fulfillment details for the order                            |
-| Refunds            | Refund[]                                                     | Refunds performed on the order                               |
+| Refunds            | [Refund](https://docs.cardnow.com/api-reference/models/#refund))[] | Refunds performed on the order                               |
 
 **Sample**
 
