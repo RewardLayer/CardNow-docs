@@ -11,7 +11,7 @@ A heart resource that allows for the monitoring and testing of the API
 Request
 
 ```sh
-GET https://api-cardnow.com/v1/catalog
+GET https://api-cardnow.com/v1/orders/1234
 Accept-Encoding: gzip,deflate
 correlationid: 7e79f263-57a7-4d59-bd0a-69e03806488f
 Host: api.cardnow.com
@@ -25,39 +25,44 @@ Responses
 
 === "200 OK"
 
-    ```json
-    {  "Catalog": [
-    {
-    "PackagingType": "Box",
-    "Brand": "Amazon",
-    "SKU": "AmazonKIT"
-    },
-    {
-    "PackagingType": "Box",
-    "Brand": "Best Buy",
-    "SKU": "BestBuyKIT"
-    }
-    }
-    
-    ```
+```json
+{
+  "InvoiceNumber" : "ABC123455",
+  "OrderId" : 123,
+  "PartnerOrderId" : "ABCSFFFFGFF",
+  "CreatedUTC" : "2019-07-26T16:59:57-05:00.",
+  "UpdatedUTC" : "2019-07-26T16:59:57-05:00."
+  
+}
+```
 
-=== "500 "
+=== "400 "
 
-    ```json
-    {
-      "ErrorCode": "cardnow.error.catalog",
-      "Message": "The is something wrong with the catalog",
-      "MoreInfoUrl": "docs.cardnow.com/api-reference/cardnow.invalid.catalog",
-      "UserMessage": "There was an error when calling the catalog message. Please contact support@cardnow.com to address the issue. "
-    }
-    ```
+```json
+
+{
+  "ErrorCode": "cardnow.error.catalog",
+  "Message": "The is something wrong with the catalog",
+  "MoreInfoUrl": "docs.cardnow.com/api-reference/cardnow.invalid.catalog",
+  "UserMessage": "There was an error when calling the catalog message. Please contact support@cardnow.com to address the issue. "
+}
+
+```
+
+=== "429"
+
+```json
+
+```
+
+
 
 === "503"
     
 
-    ```json
-    
-    ```
+```json
+
+```
 
 ***
 
@@ -74,8 +79,8 @@ Responses
 
 | Http Status | Response Model                                               | Notes        |
 | ----------- | ------------------------------------------------------------ | ------------ |
-| 200         | Array of [Products](https://docs.cardnow.com/api-reference/models/#product) |              |
-| 400         | `Error`                                                      |              |
+| 200         | [Order](https://docs.cardnow.com/api-reference/models/#order) |              |
+| 400         | [Error](https://docs.cardnow.com/api-reference/models/#error) |              |
 | 429         |                                                              | Rate Limited |
 | 500         |                                                              |              |
 | 503         |                                                              |              |
@@ -102,7 +107,7 @@ the list of orders
 Request
 
 ```sh
-GET https://api-cardnow.com/v1/catalog
+GET https://api-cardnow.com/v1/orders
 Accept-Encoding: gzip,deflate
 correlationid: 7e79f263-57a7-4d59-bd0a-69e03806488f
 Host: api.cardnow.com
@@ -116,21 +121,34 @@ Responses
 
 === "200 OK"
 
-    ```json
-    {  "Catalog": [
-    {
-    "PackagingType": "Box",
-    "Brand": "Amazon",
-    "SKU": "AmazonKIT"
-    },
-    {
-    "PackagingType": "Box",
-    "Brand": "Best Buy",
-    "SKU": "BestBuyKIT"
-    }
-    }
-    
-    ```
+```json
+{  "Orders": [
+{
+  "InvoiceNumber" : "ABC123455",
+  "OrderId" : 123,
+  "PartnerOrderId" : "ABCSFFFFGFF",
+  "CreatedUTC" : "2019-07-26T16:59:57-05:00.",
+  "UpdatedUTC" : "2019-07-26T16:59:57-05:00."
+  
+},
+{
+  "InvoiceNumber" : "ABC123455",
+  "OrderId" : 123,
+  "PartnerOrderId" : "ABCSFFFFGFF",
+  "CreatedUTC" : "2019-07-26T16:59:57-05:00.",
+  "UpdatedUTC" : "2019-07-26T16:59:57-05:00."
+  
+}
+}
+```
+
+=== "429"
+
+```json
+
+```
+
+
 
 === "500 "
 
@@ -146,9 +164,7 @@ Responses
 === "503"
 
 
-    ```json
     
-    ```
 
 ***
 
@@ -165,8 +181,8 @@ Responses
 
 | Http Status | Response Model                                               | Notes        |
 | ----------- | ------------------------------------------------------------ | ------------ |
-| 200         | Array of [Products](https://docs.cardnow.com/api-reference/models/#product) |              |
-| 400         | `Error`                                                      |              |
+| 200         | Array of [Orders](https://docs.cardnow.com/api-reference/models/#product) |              |
+| 400         | [Error](https://docs.cardnow.com/api-reference/models/#error) |              |
 | 429         |                                                              | Rate Limited |
 | 500         |                                                              |              |
 | 503         |                                                              |              |
@@ -193,7 +209,7 @@ Creates a single order
 Request
 
 ```sh
-POZF https://api-cardnow.com/v1/orders
+POST https://api-cardnow.com/v1/orders
 Accept-Encoding: gzip,deflate
 correlationid: 7e79f263-57a7-4d59-bd0a-69e03806488f
 Host: api.cardnow.com
@@ -207,21 +223,14 @@ Responses
 
 === "200 OK"
 
-    ```json
-    {  "Catalog": [
     {
-    "PackagingType": "Box",
-    "Brand": "Amazon",
-    "SKU": "AmazonKIT"
-    },
-    {
-    "PackagingType": "Box",
-    "Brand": "Best Buy",
-    "SKU": "BestBuyKIT"
+      "InvoiceNumber" : "ABC123455",
+      "OrderId" : 123,
+      "PartnerOrderId" : "ABCSFFFFGFF",
+      "CreatedUTC" : "2019-07-26T16:59:57-05:00.",
+      "UpdatedUTC" : "2019-07-26T16:59:57-05:00."
+      
     }
-    }
-    
-    ```
 
 === "500 "
 
@@ -256,8 +265,8 @@ Responses
 
 | Http Status | Response Model                                               | Notes        |
 | ----------- | ------------------------------------------------------------ | ------------ |
-| 200         | Array of [Products](https://docs.cardnow.com/api-reference/models/#product) |              |
-| 400         | `Error`                                                      |              |
+| 200         | [Order](https://docs.cardnow.com/api-reference/models/#order) |              |
+| 400         | [Error](https://docs.cardnow.com/api-reference/models/#error) |              |
 | 429         |                                                              | Rate Limited |
 | 500         |                                                              |              |
 | 503         |                                                              |              |
