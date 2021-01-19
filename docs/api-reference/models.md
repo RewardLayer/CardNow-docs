@@ -12,6 +12,9 @@ The Product is an individual product that can be ordered as a part of a order. T
 |Packaging Type|`enum`|	A specific type of package that the card will be packaged in The values are ```Box```, ```Starter``` or ```Refill```|
 |Brand|	`string`|	The name of the Brand for the card that can be ordered|
 |SKU|	`string`|	The SKU that is used to order the product. Based on the Packaging type and brand this will be unique and will determine both the brand and the packaging type|
+|MinAmount|	`double`|	The min amount that can be loaded|
+|MaxAmount|	`double`|	The max amount that can be loaded|
+
 ***
 
 **Sample**
@@ -20,7 +23,9 @@ The Product is an individual product that can be ordered as a part of a order. T
 {
 "PackagingType": "Box",
 "Brand": "Amazon",
-"SKU": "AmazonKIT"
+"SKU": "AmazonKIT",
+  "MinAmount": "5.00",
+  "MaxAmount": "100.00"
 }
 ```
 
@@ -110,7 +115,7 @@ Information on the customer that the order was placed on behalf
 
 | Name         | Type     | Notes                                   |
 | ------------ | -------- | :-------------------------------------- |
-| CustomerId   | int      | The identifier for the Customer         |
+| CustomerId   | string      | The identifier for the Customer         |
 | CreatedUTC   | DateTime | Date/Time that the customer is created  |
 | UpdatedUTC   | DateTime | Date/Time the customer was last updated |
 | EmailAddress | string   | Email Address of the customer           |
@@ -155,12 +160,49 @@ Refund on the Order
 
 | Name     | Type       | Notes                         |
 | -------- | ---------- | :---------------------------- |
-| RefundId | int        | The identifier for the Refund |
-| Amount   | decimal    | Refund Amount                 |
-| LineItem | LineItem[] | Line Items Affected           |
-| Status   | string     | Status of the refund          |
+| RefundId | `int`        | The identifier for the Refund |
+| Amount   | `decimal`    | Refund Amount                 |
+| LineItem | `LineItem[]` | Line Items Affected           |
+| Status   | `string`     | Status of the refund          |
 
-## 
+
+## Activation Models
+***
+
+
+###Activation
+The Activation allows for activation of a single card. 
+
+Using an App or having the customer enter the card numbers
+
+|Name|	Type|	Notes|
+|---|---|---|
+|ActivationId|`string`| The id of the activation	|
+| CreatedUTC   | `DateTime` | Date/Time that the address is created  |
+| UpdatedUTC   | `DateTime` | Date/Time the address was last updated |
+|CustomerId|	`string`|	The id of the customer|
+|Sku|	`string`|	The SKU of the Product|
+|BarCode|	`string`|	The barcode that was scanned  or entered from the customer |
+|Amount|	`double`|	The amount to load|
+|Status|	`Enum`|	The values are ```Success```, ```Pending``` or ```Failed```|
+|FailedUserMessage|	`string`|	The message for a failure|
+***
+
+**Sample**
+
+```json
+{
+  "ActivationId": "18df3ed5040647c3a2c08a460c3e73a0", 
+  "CreatedUTC": "2020-04-23T18:25:43.511Z",
+  "UpdatedUTC": "2020-04-23T18:25:43.511Z",
+  "CustomerId": "921a745a516046749f074b260e340a41",
+  "SKU": "FREBZRD",
+  "Amount" : "50.00",
+  "Status" : "Pending"
+  
+}
+```
+
 
 ***
 ## Error Models
@@ -169,7 +211,7 @@ Refund on the Order
 Describes the Error return for a set of 400 or 500 error returns
 
 
-The error​ model is a set of error code and messages that describe the error that happened in the system.
+The error model is a set of error code and messages that describe the error that happened in the system.
 
 |Name|	Type|	Notes|
 |---|---|---|
