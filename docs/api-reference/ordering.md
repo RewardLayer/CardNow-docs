@@ -87,7 +87,7 @@ Responses
 
 ***
 
-##### Status Returns
+##### Return Codes
 
 | Https Status | Error                        | Message                                     |
 | ------------ | ---------------------------- | ------------------------------------------- |
@@ -189,7 +189,7 @@ Responses
 
 ***
 
-##### Status Returns
+##### Return Codes
 
 | Https Status | Error                        | Message                                     |
 | ------------ | ---------------------------- | ------------------------------------------- |
@@ -273,7 +273,7 @@ Responses
 
 ***
 
-##### Status Returns
+##### Return Codes
 
 | Https Status | Error                        | Message                                     |
 | ------------ | ---------------------------- | ------------------------------------------- |

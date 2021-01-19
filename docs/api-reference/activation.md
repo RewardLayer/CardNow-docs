@@ -87,7 +87,7 @@ Responses
 
 ***
 
-##### Status Returns
+##### Return Codes
 
 | Https Status | Error                        | Message                                     |
 | ------------ | ---------------------------- | ------------------------------------------- |
@@ -96,11 +96,11 @@ Responses
 
 ***
 
-Retrieve a list of orders
+Retrieve a list of Activations
 
 ### ```GET``` v1/activations
 
-the list of orders
+the list of activations
 
 ***
 
@@ -193,7 +193,7 @@ Responses
 
 ***
 
-##### Status Returns
+##### Return Codes
 
 | Https Status | Error                        | Message                                     |
 | ------------ | ---------------------------- | ------------------------------------------- |
@@ -202,7 +202,7 @@ Responses
 
 ***
 
-Create a new Order
+Create a new Activation of a card
 
 ### ```POST``` v1/activations
 
@@ -271,7 +271,7 @@ Responses
 
 | Http Status | Response Model                                               | Notes        |
 | ----------- | ------------------------------------------------------------ | ------------ |
-| 200         | [Order](https://docs.cardnow.com/api-reference/models/#order) |              |
+| 200         | [Activation](https://docs.cardnow.com/api-reference/models/#activation) |              |
 | 400         | [Error](https://docs.cardnow.com/api-reference/models/#error) |              |
 | 429         |                                                              | Rate Limited |
 | 500         |                                                              |              |
@@ -279,7 +279,7 @@ Responses
 
 ***
 
-##### Status Returns
+##### Return Codes
 
 | Https Status | Error                        | Message                                     |
 | ------------ | ---------------------------- | ------------------------------------------- |

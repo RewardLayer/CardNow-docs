@@ -62,7 +62,7 @@ Responses
 |503| ||
 
 ***
-##### Status Returns
+##### Return Codes
 
 |Https Status|	Error|	Message|
 |---|---|---|
