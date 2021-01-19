@@ -1,0 +1,1136 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+    
+    
+      
+        <title>Models - CardNow API</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catalog-models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="CardNow API" class="md-header-nav__button md-logo" aria-label="CardNow API">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            CardNow API
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Models
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/RewardLayer/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CardNow API" class="md-nav__button md-logo" aria-label="CardNow API">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    CardNow API
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RewardLayer/docs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      
+      <label class="md-nav__link" for="nav-2">
+        API Reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          API Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalog/" class="md-nav__link">
+        Catalog
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ordering/" class="md-nav__link">
+        Ordering
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activation/" class="md-nav__link">
+        Activation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Models
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#catalog-models" class="md-nav__link">
+    Catalog Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Catalog Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#product" class="md-nav__link">
+    Product
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordering-models" class="md-nav__link">
+    Ordering Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordering Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order" class="md-nav__link">
+    Order
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineitem" class="md-nav__link">
+    LineItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fulfillment" class="md-nav__link">
+    Fulfillment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customer" class="md-nav__link">
+    Customer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#address" class="md-nav__link">
+    Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paymenttransaction" class="md-nav__link">
+    PaymentTransaction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refund" class="md-nav__link">
+    Refund
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activation-models" class="md-nav__link">
+    Activation Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Activation Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activation" class="md-nav__link">
+    Activation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-models" class="md-nav__link">
+    Error Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    Error
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Models</h1>
+                
+                <hr />
+<h2 id="catalog-models">Catalog Models<a class="headerlink" href="#catalog-models" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="product">Product<a class="headerlink" href="#product" title="Permanent link">&para;</a></h3>
+<p>Describes a Product that can be ordered </p>
+<p>The Product is an individual product that can be ordered as a part of a order. The product is configured for each partner and determines the type of packaging type included as part of the order</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Packaging Type</td>
+<td><code>enum</code></td>
+<td>A specific type of package that the card will be packaged in The values are <code>Box</code>, <code>Starter</code> or <code>Refill</code></td>
+</tr>
+<tr>
+<td>Brand</td>
+<td><code>string</code></td>
+<td>The name of the Brand for the card that can be ordered</td>
+</tr>
+<tr>
+<td>SKU</td>
+<td><code>string</code></td>
+<td>The SKU that is used to order the product. Based on the Packaging type and brand this will be unique and will determine both the brand and the packaging type</td>
+</tr>
+<tr>
+<td>MinAmount</td>
+<td><code>double</code></td>
+<td>The min amount that can be loaded</td>
+</tr>
+<tr>
+<td>MaxAmount</td>
+<td><code>double</code></td>
+<td>The max amount that can be loaded</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Sample</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;PackagingType&quot;</span><span class="p">:</span> <span class="s2">&quot;Box&quot;</span><span class="p">,</span>
+<span class="nt">&quot;Brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Amazon&quot;</span><span class="p">,</span>
+<span class="nt">&quot;SKU&quot;</span><span class="p">:</span> <span class="s2">&quot;AmazonKIT&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;MinAmount&quot;</span><span class="p">:</span> <span class="s2">&quot;5.00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;MaxAmount&quot;</span><span class="p">:</span> <span class="s2">&quot;100.00&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="ordering-models">Ordering Models<a class="headerlink" href="#ordering-models" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="order">Order<a class="headerlink" href="#order" title="Permanent link">&para;</a></h3>
+<p>Describes an Order</p>
+<p>The order are the details of what will or what was sent to an individual customer. </p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OrderId</td>
+<td>Int</td>
+<td align="left">A unique identifier use by the API to track the order</td>
+</tr>
+<tr>
+<td>InvoiceNumber</td>
+<td><code>string</code></td>
+<td align="left">A invoice number that is used by the customer to track the order.</td>
+</tr>
+<tr>
+<td>PartnerOrderId</td>
+<td>string</td>
+<td align="left">An identifier sent by the partner when creating an order</td>
+</tr>
+<tr>
+<td>CreatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time that the order is created</td>
+</tr>
+<tr>
+<td>UpdatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time the order was last updated</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>String</td>
+<td align="left">The status of the order</td>
+</tr>
+<tr>
+<td>FulfillmentStatus</td>
+<td>String</td>
+<td align="left">The status of fulfillment</td>
+</tr>
+<tr>
+<td>OrderTotal</td>
+<td>decimal</td>
+<td align="left">Total cost of the order</td>
+</tr>
+<tr>
+<td>Discounts</td>
+<td>decimal</td>
+<td align="left">Discounts on the order</td>
+</tr>
+<tr>
+<td>SubTotal</td>
+<td>decimal</td>
+<td align="left">Sub-total before discounts are applied to the order</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#customer">Customer</a></td>
+<td align="left">Customer Information for the order</td>
+</tr>
+<tr>
+<td>PaymentTransaction</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#payment">PaymentTransaction[]</a></td>
+<td align="left">Payment for the Order</td>
+</tr>
+<tr>
+<td>ShippingAddress</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#address">Address</a></td>
+<td align="left">Address the Order is shipped</td>
+</tr>
+<tr>
+<td>BillingAddress</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#address">Address</a></td>
+<td align="left">Billing Address for the Order</td>
+</tr>
+<tr>
+<td>LineItems</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#lineitem">LineItem[]</a></td>
+<td align="left">List of line items for the Order</td>
+</tr>
+<tr>
+<td>Fulfillment</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#fulfillment">Fulfillment</a>[]</td>
+<td align="left">Fulfillment details for the order</td>
+</tr>
+<tr>
+<td>Refunds</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#refund">Refund</a>)[]</td>
+<td align="left">Refunds performed on the order</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sample</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;InvoiceNumber&quot;</span> <span class="p">:</span> <span class="s2">&quot;ABC123455&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;OrderId&quot;</span> <span class="p">:</span> <span class="mi">123</span><span class="p">,</span>
+  <span class="nt">&quot;PartnerOrderId&quot;</span> <span class="p">:</span> <span class="s2">&quot;ABCSFFFFGFF&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;CreatedUTC&quot;</span> <span class="p">:</span> <span class="s2">&quot;2019-07-26T16:59:57-05:00.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;UpdatedUTC&quot;</span> <span class="p">:</span> <span class="s2">&quot;2019-07-26T16:59:57-05:00.&quot;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="lineitem">LineItem<a class="headerlink" href="#lineitem" title="Permanent link">&para;</a></h3>
+<p>The LineItem represents the details of Product that needs to be fulfilled</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LineItemId</td>
+<td>int</td>
+<td align="left">The identifier for the line item</td>
+</tr>
+<tr>
+<td>CreatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time that the line item is created</td>
+</tr>
+<tr>
+<td>UpdatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time the line item was last updated</td>
+</tr>
+<tr>
+<td>Sku</td>
+<td>String</td>
+<td align="left">The identifier of the product that should be fulfilled</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>int</td>
+<td align="left">Quantity of the product that should be ordered</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>decimal</td>
+<td align="left">Price of the Product</td>
+</tr>
+<tr>
+<td>Discount</td>
+<td>decimal</td>
+<td align="left">Discount applied to the line item</td>
+</tr>
+<tr>
+<td>SubTotal</td>
+<td>decimal</td>
+<td align="left">Sub-total for the line item</td>
+</tr>
+<tr>
+<td>LineItemTotal</td>
+<td>decimal</td>
+<td align="left">Total for the line item</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sample</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;lineItemId&quot;</span> <span class="p">:</span> <span class="mi">1233</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="fulfillment">Fulfillment<a class="headerlink" href="#fulfillment" title="Permanent link">&para;</a></h3>
+<p>Details of line items that have been fulfilled</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FulfillmentId</td>
+<td>int</td>
+<td align="left">The identifier for the fulfillment</td>
+</tr>
+<tr>
+<td>CreatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time that the line item is created</td>
+</tr>
+<tr>
+<td>UpdatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time the line item was last updated</td>
+</tr>
+<tr>
+<td>LineItems</td>
+<td><a href="https://docs.cardnow.com/api-reference/models/#lineitem">LineItem[]</a></td>
+<td align="left">List of line items that have been fulfilled</td>
+</tr>
+<tr>
+<td>TrackingCompany</td>
+<td>string</td>
+<td align="left">Tracking Company used to ship the product</td>
+</tr>
+<tr>
+<td>TrackingNumber</td>
+<td>String[]</td>
+<td align="left">Tracking Numbers</td>
+</tr>
+<tr>
+<td>ShipDate</td>
+<td>DateTime</td>
+<td align="left">The Datetime the products shipped</td>
+</tr>
+</tbody>
+</table>
+<h3 id="customer">Customer<a class="headerlink" href="#customer" title="Permanent link">&para;</a></h3>
+<p>Information on the customer that the order was placed on behalf</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CustomerId</td>
+<td>string</td>
+<td align="left">The identifier for the Customer</td>
+</tr>
+<tr>
+<td>CreatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time that the customer is created</td>
+</tr>
+<tr>
+<td>UpdatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time the customer was last updated</td>
+</tr>
+<tr>
+<td>EmailAddress</td>
+<td>string</td>
+<td align="left">Email Address of the customer</td>
+</tr>
+<tr>
+<td>PhoneNumber</td>
+<td>string</td>
+<td align="left">Phone number of the customer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="address">Address<a class="headerlink" href="#address" title="Permanent link">&para;</a></h3>
+<p>Describes an Address</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AddressId</td>
+<td>int</td>
+<td align="left">The identifier for the Address</td>
+</tr>
+<tr>
+<td>CreatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time that the address is created</td>
+</tr>
+<tr>
+<td>UpdatedUTC</td>
+<td>DateTime</td>
+<td align="left">Date/Time the address was last updated</td>
+</tr>
+<tr>
+<td>FirstName</td>
+<td>String</td>
+<td align="left">First name of the recipient</td>
+</tr>
+<tr>
+<td>LastName</td>
+<td>String</td>
+<td align="left">Last name of the recipient</td>
+</tr>
+<tr>
+<td>Company Name</td>
+<td>string</td>
+<td align="left">Name of the company (Optional)</td>
+</tr>
+<tr>
+<td>AddressLine1</td>
+<td>String</td>
+<td align="left">Address line 1</td>
+</tr>
+<tr>
+<td>AddressLin2</td>
+<td>String</td>
+<td align="left">Address line 2(Optional)</td>
+</tr>
+<tr>
+<td>City</td>
+<td>String</td>
+<td align="left">City</td>
+</tr>
+<tr>
+<td>Region</td>
+<td>String</td>
+<td align="left">Region/State</td>
+</tr>
+<tr>
+<td>PostalCode</td>
+<td>String</td>
+<td align="left">Postal Code/Zip Code (Zip plus 4)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="paymenttransaction">PaymentTransaction<a class="headerlink" href="#paymenttransaction" title="Permanent link">&para;</a></h3>
+<p>Payment for the Order</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PaymentId</td>
+<td>int</td>
+<td align="left">The identifier for the Payment</td>
+</tr>
+<tr>
+<td>TransactionStatus</td>
+<td>string</td>
+<td align="left">Status of the Transaction</td>
+</tr>
+<tr>
+<td>OrderId</td>
+<td>int</td>
+<td align="left">OrderId associated with the Transaction</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>string</td>
+<td align="left">Type of transaction: authorization: Money that the customer has agreed to pay. The authorization period can be between 7 and 30 days (depending on your payment service) while a store waits for a payment to be captured.<br/>capture: A transfer of money that was reserved during the authorization<br/>sale: The authorization and capture of a payment performed in one single step.<br/>void: The cancellation of a pending authorization or capture.<br/>refund: The partial or full return of captured money to the customer.</td>
+</tr>
+<tr>
+<td>Source</td>
+<td>String</td>
+<td align="left">Credit Card, Credit, Invoice</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>string</td>
+<td align="left">Status of the payment</td>
+</tr>
+</tbody>
+</table>
+<h3 id="refund">Refund<a class="headerlink" href="#refund" title="Permanent link">&para;</a></h3>
+<p>Refund on the Order</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RefundId</td>
+<td><code>int</code></td>
+<td align="left">The identifier for the Refund</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td><code>decimal</code></td>
+<td align="left">Refund Amount</td>
+</tr>
+<tr>
+<td>LineItem</td>
+<td><code>LineItem[]</code></td>
+<td align="left">Line Items Affected</td>
+</tr>
+<tr>
+<td>Status</td>
+<td><code>string</code></td>
+<td align="left">Status of the refund</td>
+</tr>
+</tbody>
+</table>
+<h2 id="activation-models">Activation Models<a class="headerlink" href="#activation-models" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="activation">Activation<a class="headerlink" href="#activation" title="Permanent link">&para;</a></h3>
+<p>The Activation allows for activation of a single card. </p>
+<p>Using an App or having the customer enter the card numbers</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ActivationId</td>
+<td><code>string</code></td>
+<td>The id of the activation</td>
+</tr>
+<tr>
+<td>CreatedUTC</td>
+<td><code>DateTime</code></td>
+<td>Date/Time that the address is created</td>
+</tr>
+<tr>
+<td>UpdatedUTC</td>
+<td><code>DateTime</code></td>
+<td>Date/Time the address was last updated</td>
+</tr>
+<tr>
+<td>CustomerId</td>
+<td><code>string</code></td>
+<td>The id of the customer</td>
+</tr>
+<tr>
+<td>Sku</td>
+<td><code>string</code></td>
+<td>The SKU of the Product</td>
+</tr>
+<tr>
+<td>BarCode</td>
+<td><code>string</code></td>
+<td>The barcode that was scanned  or entered from the customer</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td><code>double</code></td>
+<td>The amount to load</td>
+</tr>
+<tr>
+<td>Status</td>
+<td><code>Enum</code></td>
+<td>The values are <code>Success</code>, <code>Pending</code> or <code>Failed</code></td>
+</tr>
+<tr>
+<td>FailedUserMessage</td>
+<td><code>string</code></td>
+<td>The message for a failure</td>
+</tr>
+<tr>
+<td>***</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sample</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;ActivationId&quot;</span><span class="p">:</span> <span class="s2">&quot;18df3ed5040647c3a2c08a460c3e73a0&quot;</span><span class="p">,</span> 
+  <span class="nt">&quot;CreatedUTC&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-04-23T18:25:43.511Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;UpdatedUTC&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-04-23T18:25:43.511Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;CustomerId&quot;</span><span class="p">:</span> <span class="s2">&quot;921a745a516046749f074b260e340a41&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;SKU&quot;</span><span class="p">:</span> <span class="s2">&quot;FREBZRD&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;Amount&quot;</span> <span class="p">:</span> <span class="s2">&quot;50.00&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;Status&quot;</span> <span class="p">:</span> <span class="s2">&quot;Pending&quot;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="error-models">Error Models<a class="headerlink" href="#error-models" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="error">Error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h3>
+<p>Describes the Error return for a set of 400 or 500 error returns</p>
+<p>The error model is a set of error code and messages that describe the error that happened in the system.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ErrorCode</td>
+<td><code>string</code></td>
+<td>A fixed string error message that can be used</td>
+</tr>
+<tr>
+<td>Message</td>
+<td><code>string</code></td>
+<td>A short human readable message</td>
+</tr>
+<tr>
+<td>MoreInfoURL</td>
+<td><code>string</code></td>
+<td>A link to the document website that goes into more detail about this error and how to fix it.</td>
+</tr>
+<tr>
+<td>UserMessage</td>
+<td><code>string</code></td>
+<td>A longer form human readable message on how to solve the problem or give details about the nature of the error</td>
+</tr>
+<tr>
+<td>***</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Sample</strong>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="nt">&quot;ErrorCode&quot;</span><span class="p">:</span> <span class="s2">&quot;exchange.invalid.productLine&quot;</span><span class="p">,</span>
+<span class="nt">&quot;Message&quot;</span><span class="p">:</span> <span class="s2">&quot;The product line is not recognized&quot;</span><span class="p">,</span>
+<span class="nt">&quot;MoreInfoUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;docs.cardpool.com/reference/exchange.invalid.productLine&quot;</span><span class="p">,</span>
+<span class="nt">&quot;UserMessage&quot;</span><span class="p">:</span> <span class="s2">&quot;There is a misconfiguration of the product line. Please check the id that was sent into the api call to make sure it matches a product line id that was sent from the supportedProductLine API call&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../activation/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Activation
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 - 2022 CardNow
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.tabs.sticky', 'toc.integrate', 'navigation.sections', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
